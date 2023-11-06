@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>sai</title>
+    <style>
+        body{
+            background-image: url(maindp.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav{
+        position: fixed;
+        z-index: 10;
+        width:1550px;
+        left:0px;
+        top:0px;
+        border:1px inset  black;
+        height: 60px;
+        padding-bottom: 20px;
+        background-color:rgb(212, 185, 185);
+        box-shadow: 2px 2px 2px 2px rgba(1,1,1, 0.6);
+    }
+        ul{
+            position: absolute;
+            right:50px;
+            top:0px;
+        }
+        .li1{
+            display: inline;
+            padding:0px 30px;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+         /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+        .ul2,.ul3{
+            display: none;
+        }
+        
+       ul .li1:hover .ul2{
+        display: block;
+        position: absolute;
+        right:870px;
+        list-style-type: none;
+        top:40px;
+        background-color: rgba(0,0,0, 0.6);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+       }
+      
+       .ul2 li a{
+        color:white;
+        font-weight: 100px;
+       }
+       .ul2 li a:hover{
+        color:rgb(241, 7, 7);
+       }
+       /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+
+        .ul3{
+            display: none;
+        }
+        
+       ul .li1:hover .ul3{
+        display: block;
+        position: absolute;
+        right:740px;
+        list-style-type: none;
+        top:40px;
+        background-color:rgba(0,0,0,0.6);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.8);
+       }
+      
+       .ul3 li a{
+        color:white;
+       }
+       .ul3 li a:hover{
+        color:rgb(240, 16, 23);
+       }
+       /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+      .li1 a:active{
+        color: blue;
+      }
+      .li1 a:hover{
+        color:red;
+      }
+      .btn1:hover{
+        background-color: rgb(218, 225, 218);
+      }
+      .btn1{
+        border: 1px solid black;
+        padding: 15px 70px;
+        border-radius: 5px;
+        font-weight: 900;
+        font-size: large;
+        color:rgb(224, 9, 9);
+        background-color: transparent;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+      }
+     h1{
+        color:red;
+       margin-left: 630px;
+     }
+     img{
+        position: absolute;
+        top:-10px;
+     }
+     .rk{
+     position: fixed;
+        align-content: center;
+        top:50px;
+        color:rgba(1,1,1, 0.6);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 70px;
+        font-weight:900;
+        left:550px;
+        z-index: 9;
+     }
+    p{
+        color:rgb(233, 221, 221);
+        font-size: 15px;
+    }
+    h2{
+     color: rgb(255, 0, 200);
+    }
+    .div2{
+        margin-top: 200px;
+        height: 100%;
+        width: 50%;
+        position: sticky;
+    }
+    .div3{
+        position: absolute;
+        top:200px;
+        left:870px;
+        width: 40%;
+        height: 100%;
+    }
+    .uli{
+        color:rgb(233, 221, 221);
+        margin-top: 100px;
+        margin-left: -30px;
+    }
+    .uli li{
+        margin-bottom: 20px;
+    }
+   
+
+    </style>
+</head>
+<body>
+    <nav>
+       <!-- <img src="fly.gif" alt="aeroplane gif" style="height: 100px; width: 100px; clip-path:circle(40%);"> -->
+       <img src="rklogo.png" alt="logo" height="90px" width="100px">
+        <ul class="ul1">
+            <li class="li1"><a href="#">Home</a></li>
+            <li class="li1"><a href="#">Placess</a>
+                <ul class="ul2">
+                    <li><a href="hyd.html">hyd</a></li>
+                    <li><a href="ooty.html">ooty</a></li>
+                    <li><a href="banglore.html">banglore</a></li>
+                    <li><a href="channai.html">chennai</a></li>
+                </ul>
+            </li>
+            <li class="li1"><a href="#">Plans</a>
+            <ul class="ul3">
+                <li><a href="100k.html">above 1 lakh</a></li>
+                <li><a href="70k.html">70k-90k</a></li>
+                <li><a href="50k.html">50k-70k</a></li>
+                <li><a href="20k.html">20k-50k</a></li>
+                <li><a href="-20k.html">20k bellow</a></li>
+            </ul>
+            </li>
+            <li class="li1"><a href="reviews.html">Reviews</a></li>
+            <li class="li1"><a href="Contact.html">Contact Us</a></li>
+            <li class="li1"><a href="map.html">Toor Map</a></li>
+            <li class="li1"><a href="book ticket.html"><button class="btn1">Book Ticket</button></a></li>
+        </ul>
+    </nav>
+
+<h2 class="rk">Rk Travallers </h2>
+<div class="div2">
+    
+    <h2>Welcome to RK traveles</h2>
+    <p>Are you ready to embark on an unforgettable journey to the most beautiful and culturally rich places in the world? At [Your Travel Company Name], we're dedicated to curating the ultimate travel experiences that provide the perfect atmosphere and leave you with lasting memories.
+
+    </p>
+    <h2>About Us</h2>
+    <p>
+        RK traveles was founded with a passion for exploration and a commitment to offering travelers unique, immersive, and transformative experiences. Our team of travel experts has scoured the globe to handpick destinations that offer the best atmosphere and a profound sense of adventure
+    </p>
+    
+    <h2>Testimonials</h2>
+    <p>Don't just take our word for it. Read what some of our satisfied travelers have to say about their experiences with RK traveles.</p>
+    <h2>Book Your Adventure</h2>
+    <p>Ready to embark on your journey? Use our user-friendly booking system to select your destination, dates, and preferred activities, and get ready for the adventure of a lifetime.</p>
+    
+    <P>Got questions or need assistance in planning your trip? We're here to help. Contact our friendly customer support team, and we'll be happy to assist you<a href="contact.html" style="color: blue;">contact us</a></P>
+</div>
+<div class="div3"><h2>Why Choose Us? </h2>
+    <ul class="uli">
+        <li>Handpicked Destinations: We believe in quality over quantity. Every destination in our portfolio has been carefully selected for its exceptional beauty, rich cultural heritage, and incredible atmosphere. </li>
+        <li> Local Expertise: We collaborate with knowledgeable local guides and experts who can provide you with insider insights, ensuring you get the most out of your journey.</li>
+        <li> Tailored Experiences: We understand that no two travelers are the same. That's why we offer personalized itineraries, allowing you to choose activities and experiences that align with your interests and preferences</li>
+        <li>Sustainability: We're committed to responsible tourism, ensuring that our adventures have a minimal impact on the environment and a positive impact on local communities. </li>
+    </ul></div>
+</body>
+</html>

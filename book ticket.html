@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket Payment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#payment-methods {
+    margin-bottom: 20px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-method label {
+    margin-left: 10px;
+}
+
+#credit-card-form,
+#paypal-form {
+    display: none;
+}
+
+#submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left:470px;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+.btn{
+    position: absolute;
+    left:20px;
+    top:50px;
+    padding: 5px 10px;
+    background-color:transparent;
+    color:white;
+}
+    </style>
+    <script>
+    function success(){
+        alert("Congratulation , your Trip is Booked.");
+    }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html"><button class="btn">Home</button></a>
+        <h1>Book Ticket Payment</h1>
+    </header>
+    <main>
+        <section id="payment-methods">
+            <h2>Select Payment Method</h2>
+            <div class="payment-method">
+                <input type="radio" name="payment" id="credit-card">
+                <label for="credit-card">Credit Card</label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal">PayPal</label>
+            </div>
+        </section>
+        <section id="payment-forms">
+            <div id="credit-card-form">
+                <h3>Credit Card Information</h3>
+                <form>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" name="expiry">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv">
+                </form>
+            </div>
+            <div id="paypal-form">
+                <h3>PayPal Information</h3>
+                <form>
+                    <label for="paypal-email">PayPal Email</label>
+                    <input type="email" id="paypal-email" name="paypal-email">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="submit-button" onclick="success()">Submit Payment</button>
+    </footer>
+</body>
+</html>
